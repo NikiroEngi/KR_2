@@ -1,0 +1,21 @@
+{
+  "name": "new_project",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "test:unit": "jest --testPathPattern=unit.test.js",
+    "test:e2e": "playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "playwright": "^1.51.1"
+  }
+}

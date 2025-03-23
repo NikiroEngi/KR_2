@@ -1,0 +1,67 @@
+/* ====== Фон ====== */
+.site-background {
+  background-image: url("./CARTINKI/blue-white.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ====== форма ====== */
+.form-container {
+  width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #5352aa, #6fb8c2);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ====== ввод ====== */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* ====== чеки ====== */
+.checkbox-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  cursor: pointer;
+}
+
+/* ====== отправитьб ====== */
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #3f8f41f1;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* ====== для ошибок ====== */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: none;
+}

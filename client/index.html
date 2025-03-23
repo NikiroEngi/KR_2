@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>registration</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body class="site-background">
+    <form class="form-container">
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        class="input-field"
+        id="username"
+        name="username"
+        required
+      />
+      <p class="error" id="usernameError"></p>
+
+      <label for="email">E-mail:</label>
+      <input
+        type="email"
+        class="input-field"
+        id="email"
+        name="email"
+        required
+      />
+      <p class="error" id="emailError"></p>
+
+      <label class="checkbox-container">
+        Show password?
+        <input type="checkbox" id="showPassword" />
+      </label>
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        class="input-field"
+        id="password"
+        name="password"
+        required
+      />
+      <p class="error" id="passwordError"></p>
+
+      <label for="confirmPassword">confirm Password:</label>
+      <input
+        type="password"
+        class="input-field"
+        id="confirmPassword"
+        name="confirmPassword"
+        required
+      />
+      <p class="error" id="confirmPasswordError"></p>
+
+      <label class="checkbox-container">
+        I agree to the terms and conditions
+        <input type="checkbox" id="terms" />
+      </label>
+      <p class="error" id="termsError"></p>
+
+      <button type="submit" class="submit-button" id="submitButton" disabled>
+        Send
+      </button>
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>
