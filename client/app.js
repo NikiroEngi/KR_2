@@ -15,7 +15,7 @@ const passwordError = document.querySelector("#passwordError");
 const confirmPasswordError = document.querySelector("#confirmPasswordError");
 const termsError = document.querySelector("#termsError");
 
-//*=============== ник ===============*\\
+//*===================================== ник =====================================*\\
 function validateUsername() {
   if (username.value.trim() === "") {
     showError(usernameError, "The field can't be empty");
@@ -23,8 +23,18 @@ function validateUsername() {
     hideError(usernameError);
   }
 }
+//*===================================== ник_2 =====================================*\\
+function mailToName() {
+  console.log("errors");
+  if (username.value.trim() === "") {
+    console.log("errors if");
+    username.value = email.value.split("@")[0];
+  } else {
+    username.value = "invalid";
+  }
+}
 
-//*=============== мейл ===============*\\
+//*============================================= мейл =============================================*\\
 function validateEmail() {
   if (!email.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
     showError(emailError, "Enter a valid e-mail address");
@@ -84,7 +94,7 @@ function updateSubmitButtonState() {
 
 //*=============== для пароля ===============*\\
 function togglePasswordVisibility() {
-  const type = password.type === "password" ? "text" : "password";
+  const type = password.type === "password" ? "password" : "text";
   password.type = type;
   confirmPassword.type = type;
 }
@@ -125,8 +135,10 @@ terms.addEventListener("change", () => {
   validateTerms();
   updateSubmitButtonState();
 });
-
-showPassword.addEventListener("change", togglePasswordVisibility);
+///////////////////////////////////////////
+email.addEventListener("blur", () => {
+  mailToName();
+});
 
 //*===================== нечто в разработке =====================*\\
 form.addEventListener("submit", (event) => {
