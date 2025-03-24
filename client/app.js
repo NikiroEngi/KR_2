@@ -89,12 +89,6 @@ function togglePasswordVisibility() {
   confirmPassword.type = type;
 }
 //*=============== я уже заманался ===============*\\
-function checkSubmitButtonState() {
-  if (!submitButton.disabled) {
-    // Если кнопка активна, перенаправляем пользователя
-    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-  }
-}
 
 //*=============== errors ===============*\\
 function showError(element, message) {
@@ -134,9 +128,12 @@ terms.addEventListener("change", () => {
 
 showPassword.addEventListener("change", togglePasswordVisibility);
 
-//*===================== нечто =====================*\\
+//*===================== нечто в разработке =====================*\\
 form.addEventListener("submit", (event) => {
+  //working
   event.preventDefault();
   const redirectURL = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
   window.location.href = redirectURL;
 });
+
+//TODO
