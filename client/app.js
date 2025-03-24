@@ -143,3 +143,26 @@ document.addEventListener("DOMContentLoaded", () => {
 showPassword.addEventListener("change", () => {
   togglePasswordVisibility();
 });
+
+//*===================== Мемы =====================*\\
+
+const popup = document.getElementById("popup");
+const closeBtn = document.querySelector(".close");
+
+function showPopup() {
+  popup.style.display = "block";
+}
+
+function closePopup() {
+  popup.style.display = "none";
+}
+
+setTimeout(showPopup, 2000);
+
+closeBtn.addEventListener("click", closePopup);
+
+window.addEventListener("click", function (event) {
+  if (event.target === popup) {
+    closePopup();
+  }
+});
