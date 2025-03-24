@@ -1,5 +1,5 @@
 const { chromium } = require("playwright");
-
+global.setImmediate = setTimeout;
 describe("Тестирование формы регистрации", () => {
   let browser;
   let page;

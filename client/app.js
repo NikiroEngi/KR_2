@@ -137,3 +137,9 @@ form.addEventListener("submit", (event) => {
 });
 
 //TODO
+document.addEventListener("DOMContentLoaded", () => {
+  togglePasswordVisibility();
+});
+showPassword.addEventListener("change", () => {
+  togglePasswordVisibility();
+});

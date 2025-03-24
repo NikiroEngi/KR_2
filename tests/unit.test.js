@@ -1,4 +1,4 @@
-const validatePassword = require("../client/app");
+const { validatePassword } = require("../client/app");
 
 test("Проверка короткого пароля", () => {
   expect(validatePassword("123")).toBe(
