@@ -33,6 +33,6 @@ describe("Тестирование формы регистрации", () => {
     await page.click("#submitButton");
 
     // Проверяем перенаправление на страницу успеха
-    expect(page.url()).toBe("https://example.com/success");
+    expect(page.url()).toBe("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
   });
 });

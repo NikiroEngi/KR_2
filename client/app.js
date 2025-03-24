@@ -131,10 +131,12 @@ terms.addEventListener("change", () => {
   validateTerms();
   updateSubmitButtonState();
 });
-submitButton.addEventListener("submit", () => {
-  if (!submitButton.disabled) {
-    // Перенаправляем при нажатии на активную кнопку
-    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-  }
-});
+
 showPassword.addEventListener("change", togglePasswordVisibility);
+
+//*===================== нечто =====================*\\
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const redirectURL = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+  window.location.href = redirectURL;
+});
