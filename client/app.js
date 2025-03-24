@@ -157,7 +157,7 @@ function closePopup() {
   popup.style.display = "none";
 }
 
-setTimeout(showPopup, 2000);
+setTimeout(showPopup, 5000);
 
 closeBtn.addEventListener("click", closePopup);
 
